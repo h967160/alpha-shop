@@ -1,0 +1,71 @@
+section.progressContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+
+  .progressBar {
+    display: flex;
+    flex-grow: 1;
+    max-width: 60px;
+    height: 1px;
+    margin: 0px 8px;
+    border-width: 2px;
+    border-style: solid;
+  }
+
+  .progressGroup {
+    display: flex;
+
+    .progressIcon {
+      display: inline-block;
+      position: relative;
+      width: 27px;
+      height: 27px;
+      margin-right: 8px;
+      border-radius: 50%;
+
+      .text {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        color: inherit;
+      }
+      .icon {
+        width: inherit;
+        height: inherit;
+      }
+    }
+    .progressLabel {
+      font-weight: 400;
+      line-height: 24px;
+      color: var(--main-text);
+    }
+  }
+  .active {
+    .progressIcon {
+      background: var(--grey-800);
+    }
+    .text {
+      color: var(--white) !important; //不使用就會被覆蓋
+    }
+    .icon {
+      display: none; //先隱藏打勾icon
+    }
+  }
+
+  .inactive {
+    color: var(--grey-300);
+    .progressIcon {
+      border: 2px solid var(--grey-300);
+    }
+    .icon {
+      display: none; //先隱藏打勾icon
+    }
+  }
+}
