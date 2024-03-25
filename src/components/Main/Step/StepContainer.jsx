@@ -1,7 +1,6 @@
 import styles from "./StepContainer.module.scss";
 import StepProgress from "./StepProgress";
 import StepForm from "./StepForm";
-
 export default function StepContainer() {
   return (
     <section
