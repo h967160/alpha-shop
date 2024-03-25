@@ -69,3 +69,37 @@ li {
 .cursor-point {
   cursor: pointer;
 }
+
+@mixin col-series($serial) {
+  display: flex;
+  flex-wrap: wrap;
+  $width: math.div(100%, 12) * $serial;
+  flex: 0 0 $width;
+  align-content: flex-start;
+  max-width: $width;
+}
+.col {
+  @for $index from 1 to 13 {
+    &.col-#{$index} {
+      @include col-series($index);
+    }
+  }
+}
+@media screen and (min-width: $screen-break-point) {
+  .col {
+    @for $index from 1 to 13 {
+      &.col-lg-#{$index} {
+        @include col-series($index);
+      }
+    }
+  }
+}
+@media screen and (max-width: $screen-break-point) {
+  .col {
+    @for $index from 1 to 13 {
+      &.col-sm-#{$index} {
+        @include col-series($index);
+      }
+    }
+  }
+}

@@ -1,8 +1,10 @@
+import "../../styles/reset.scss";
+import "../../styles/base.scss";
 import styles from "./Main.module.scss";
-export default function Main() {
+export default function Main({ children }) {
   return (
-    <main class={`${styles.siteMain}`}>
-      <div class={`${styles.mainContainer}`}>Test</div>
+    <main className={`${styles.siteMain}`}>
+      <div className={`${styles.mainContainer}`}>{children}</div>
     </main>
   );
 }
