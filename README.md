@@ -1,8 +1,8 @@
 # Alpha-Shop - React 練習
 
-此專案是使用 React 來模擬電商平台結帳 UI，練習 Component 的拆解。
+此專案是使用 React 來模擬電商平台結帳 UI，練習 Component 的拆解、渲染與動態操作。
 
-目前進度為：ALPHA Shop I：元件拆分。
+目前進度為：ALPHA Shop II：元件渲染。
 
 ## Installation and Execution - 安裝並執行專案
 
