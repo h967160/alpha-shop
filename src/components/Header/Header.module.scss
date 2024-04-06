@@ -1,0 +1,27 @@
+$header-menu-item-margin-x: 16px;
+$header-action-item-margin-x: 15px;
+
+:root {
+  --header-height: 60px;
+  --header-logo-width: 170px;
+}
+
+header.siteHeader {
+  position: sticky;
+  top: 0px;
+  padding-left: var(--site-edge-margin);
+  padding-right: var(--site-edge-margin);
+  background-color: inherit;
+  text-align: center;
+  z-index: 100;
+
+  .headerContainer {
+    display: flex;
+    position: relative;
+    max-width: 1100px;
+    height: var(--header-height);
+    background-color: inherit;
+    align-items: stretch;
+  }
+}
+
