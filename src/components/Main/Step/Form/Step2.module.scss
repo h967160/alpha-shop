@@ -69,6 +69,10 @@ section.formBody {
         font-size: 12px;
         line-height: 16px;
       }
+      .infoControl {
+        display: flex;
+        justify-content: space-between;
+      }
     }
 
     .radioBoxBorder {
