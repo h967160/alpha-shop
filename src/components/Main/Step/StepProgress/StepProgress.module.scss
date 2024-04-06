@@ -34,7 +34,7 @@ section.progressContainer {
         font-weight: 700;
         line-height: 24px;
         text-align: center;
-        color: inherit;
+        // color: inherit;
       }
       .icon {
         width: inherit;
@@ -47,25 +47,49 @@ section.progressContainer {
       color: var(--main-text);
     }
   }
-  .active {
-    .progressIcon {
-      background: var(--grey-800);
-    }
-    .text {
-      color: var(--white) !important; //不使用就會被覆蓋
-    }
-    .icon {
-      display: none; //先隱藏打勾icon
-    }
+}
+.active {
+  .progressBar {
+    border-color: var(--done-progress-border);
   }
+  .progressIcon {
+    background: var(--grey-800);
+  }
+  .text {
+    color: var(--white);
+    font-size: 12px;
+  }
+  .icon {
+    display: none; //先隱藏打勾icon
+  }
+}
 
-  .inactive {
+.currentActive {
+  .progressIcon {
+    border: 1px solid var(--done-progress-border);
+  }
+  .text {
+    color: var(--main-text);
+  }
+  .icon {
+    display: none; //隱藏打勾icon
+  }
+}
+
+.completed {
+  .text {
+    display: none;
+  }
+}
+
+.inActive {
+  .progressIcon {
+    border: 1px solid var(--grey-300);
+  }
+  .text {
     color: var(--grey-300);
-    .progressIcon {
-      border: 2px solid var(--grey-300);
-    }
-    .icon {
-      display: none; //先隱藏打勾icon
-    }
+  }
+  .icon {
+    display: none; //先隱藏打勾icon
   }
 }

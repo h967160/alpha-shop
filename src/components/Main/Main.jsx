@@ -32,7 +32,7 @@ export default function Main() {
   return (
     <main className={`${styles.siteMain}`}>
       <div className={`${styles.mainContainer}`}>
-        <StepContainer dataPhase={dataPhase} />
+        <StepContainer dataPhase={dataPhase} stepPhase={stepPhase} />
         <Cart />
         <ProgressControl
           handleClickNext={handleClickNext}
