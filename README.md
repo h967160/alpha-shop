@@ -2,7 +2,7 @@
 
 此專案是使用 React 來模擬電商平台結帳 UI，練習 Component 的拆解、渲染與動態操作。
 
-目前進度為：ALPHA Shop II：元件渲染。
+目前進度為：ALPHA Shop III：元件實作。
 
 ## Installation and Execution - 安裝並執行專案
 
