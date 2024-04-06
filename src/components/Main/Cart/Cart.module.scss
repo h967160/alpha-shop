@@ -14,6 +14,14 @@ section.cartContainer {
     font-size: 18px;
     line-height: 24px;
   }
+
+  //商品為空的提示訊息
+  .emptyCartMessage {
+    line-height: 24px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff5151;
+  }
 }
 
 section.productList {
