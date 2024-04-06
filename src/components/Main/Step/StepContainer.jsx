@@ -1,7 +1,7 @@
 import styles from "./StepContainer.module.scss";
 import StepProgress from "./StepProgress";
 import StepForm from "./StepForm";
-export default function StepContainer({stepPhase}) {
+export default function StepContainer({ dataPhase }) {
   return (
     <section
       className={`${styles.registerContainer} col col-lg-6 col-sm-12`}
@@ -9,8 +9,8 @@ export default function StepContainer({stepPhase}) {
       data-total-price="0"
     >
       <h2 className={`${styles.registerTitle} col col-12`}>結帳</h2>
-      <StepProgress />
-      <StepForm stepPhase={stepPhase} />
+      <StepProgress dataPhase={dataPhase} />
+      <StepForm dataPhase={dataPhase} />
     </section>
   );
 }
