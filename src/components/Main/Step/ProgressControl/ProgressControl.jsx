@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import CheckoutContext from "../../../../context/CheckoutContext";
+import CartContext from "../../../../context/CartContext";
 import NextButton from "./NextButton";
 import PreviousButton from "./PreviousButton";
 import styles from "./ProgressControl.module.scss";
@@ -7,6 +10,8 @@ export default function ProgressControl({
   handleClickNext,
   handleClickPrevious,
 }) {
+  const { handleConfirmOrder } = useContext(CheckoutContext);
+  const { totalPrice, cartItems, clearCart } = useContext(CartContext);
   let buttonGroup;
   switch (dataPhase) {
     case "address":
@@ -30,7 +35,7 @@ export default function ProgressControl({
           <PreviousButton onClick={handleClickPrevious} />
           <button
             className={`${styles.next} cursor-point`}
-            onClick={handleClickNext}
+            onClick={() => handleConfirmOrder(totalPrice(cartItems), clearCart)}
           >
             確認下單
           </button>

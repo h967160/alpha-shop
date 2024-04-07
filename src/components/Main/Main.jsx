@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CartProvider } from "../../context/CartContext"; // 使用 CartProvider
+import { CheckoutProvider } from "../../context/CheckoutContext";
 import styles from "./Main.module.scss";
 import StepContainer from "./Step/StepContainer";
 import ProgressControl from "./Step/ProgressControl/ProgressControl";
@@ -33,15 +34,17 @@ export default function Main() {
   return (
     <main className={`${styles.siteMain}`}>
       <div className={`${styles.mainContainer}`}>
-        <StepContainer dataPhase={dataPhase} stepPhase={stepPhase} />
-        <CartProvider>
-          <Cart />
-        </CartProvider>
-        <ProgressControl
-          handleClickNext={handleClickNext}
-          handleClickPrevious={handleClickPrevious}
-          dataPhase={dataPhase}
-        />
+        <CheckoutProvider>
+          <CartProvider>
+            <StepContainer dataPhase={dataPhase} stepPhase={stepPhase} />
+            <Cart />
+            <ProgressControl
+              handleClickNext={handleClickNext}
+              handleClickPrevious={handleClickPrevious}
+              dataPhase={dataPhase}
+            />
+          </CartProvider>
+        </CheckoutProvider>
       </div>
     </main>
   );

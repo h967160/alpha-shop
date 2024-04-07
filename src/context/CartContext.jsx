@@ -21,6 +21,14 @@ export const CartProvider = ({ children }) => {
     },
   ]);
 
+  // 計算購物籃總價格
+  const totalPrice = (cartItems) => {
+    return cartItems.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    );
+  };
+
   // 更新商品數量
   const updateQuantity = (id, newQuantity) => {
     const updatedItems = cartItems.map((item) => {
@@ -38,9 +46,22 @@ export const CartProvider = ({ children }) => {
     setCartItems(updatedItems);
   };
 
+  // 清空購物車
+  const clearCart = () => {
+    setCartItems([]);
+  };
+
   // 向子元件傳遞 value
   return (
-    <CartContext.Provider value={{ cartItems, updateQuantity, removeProduct }}>
+    <CartContext.Provider
+      value={{
+        cartItems,
+        updateQuantity,
+        removeProduct,
+        totalPrice,
+        clearCart,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );
