@@ -42,9 +42,9 @@ export default function NavbarMenu() {
         <NavbarItems items={actionItems} />
       </nav>
 
-      <a className={`${styles.headerLogoContainer}`} href="#">
-        <img src={logo} className="cursor-point" />
-      </a>
+      <div className={`${styles.headerLogoContainer}`}>
+        <img src={logo} className="cursor-point" alt="logo.svg" />
+      </div>
     </>
   );
 }
