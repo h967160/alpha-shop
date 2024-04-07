@@ -22,11 +22,14 @@ export const CartProvider = ({ children }) => {
   ]);
 
   // 計算購物籃總價格
-  const totalPrice = (cartItems) => {
-    return cartItems.reduce(
+  const totalPrice = (cartItems, shippingMethod) => {
+    const itemsTotal = cartItems.reduce(
       (total, item) => total + item.price * item.quantity,
       0
     );
+    // 取得運費, 沒有的話則為 0
+    const shippingPrice = shippingMethod ? shippingMethod.price : 0;
+    return itemsTotal + shippingPrice; // 總價 = 商品價格 + 運費
   };
 
   // 更新商品數量
