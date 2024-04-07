@@ -1,10 +1,11 @@
 import { useState } from "react";
-import "../../styles/reset.scss";
-import "../../styles/base.scss";
+import { CartProvider } from "../../context/CartContext"; // 使用 CartProvider
 import styles from "./Main.module.scss";
 import StepContainer from "./Step/StepContainer";
 import ProgressControl from "./Step/ProgressControl/ProgressControl";
 import Cart from "./Cart/Cart";
+import "../../styles/reset.scss";
+import "../../styles/base.scss";
 
 export default function Main() {
   const [stepPhase, setStepPhase] = useState(1);
@@ -33,7 +34,9 @@ export default function Main() {
     <main className={`${styles.siteMain}`}>
       <div className={`${styles.mainContainer}`}>
         <StepContainer dataPhase={dataPhase} stepPhase={stepPhase} />
-        <Cart />
+        <CartProvider>
+          <Cart />
+        </CartProvider>
         <ProgressControl
           handleClickNext={handleClickNext}
           handleClickPrevious={handleClickPrevious}
