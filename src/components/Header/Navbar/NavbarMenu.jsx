@@ -5,7 +5,6 @@ import toggle from "../../../assets/icons/toggle.svg";
 import search from "../../../assets/icons/search.svg";
 import cart from "../../../assets/icons/cart.svg";
 import moon from "../../../assets/icons/moon.svg";
-import logo from "../../../assets/icons/logo.svg";
 
 export default function NavbarMenu() {
   const menuItems = [
@@ -41,10 +40,6 @@ export default function NavbarMenu() {
         <NavbarList items={menuItems} />
         <NavbarItems items={actionItems} />
       </nav>
-
-      <div className={`${styles.headerLogoContainer}`}>
-        <img src={logo} className="cursor-point" alt="logo.svg" />
-      </div>
     </>
   );
 }

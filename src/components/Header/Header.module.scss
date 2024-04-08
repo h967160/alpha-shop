@@ -23,4 +23,14 @@ header.siteHeader {
     background-color: inherit;
     align-items: stretch;
   }
+  .headerLogoContainer {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 14px;
+    height: var(--header-height);
+    width: var(--header-logo-width);
+  }
 }

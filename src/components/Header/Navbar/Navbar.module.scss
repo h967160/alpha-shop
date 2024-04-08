@@ -13,18 +13,6 @@ label.burgerContainer {
   height: 24px;
 }
 
-// logo
-.headerLogoContainer {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  padding: 14px;
-  height: var(--header-height);
-  width: var(--header-logo-width);
-}
-
 // navbar menu
 nav.navbarMenu {
   display: flex;
