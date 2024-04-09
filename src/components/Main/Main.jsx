@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { CartProvider } from "../../context/CartContext"; // 使用 CartProvider
-import { CheckoutProvider } from "../../context/CheckoutContext";
+import { CartProvider } from "@/context/CartContext";
+import { CheckoutProvider } from "@/context/CheckoutContext";
 import styles from "./Main.module.scss";
 import StepContainer from "./Step/StepContainer";
 import ProgressControl from "./Step/ProgressControl/ProgressControl";
 import Cart from "./Cart/Cart";
-import "../../styles/reset.scss";
-import "../../styles/base.scss";
+import "@/styles/reset.scss";
+import "@/styles/base.scss";
 
 export default function Main() {
   const [stepPhase, setStepPhase] = useState(1);

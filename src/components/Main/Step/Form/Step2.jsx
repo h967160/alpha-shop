@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import CheckoutContext from "../../../../context/CheckoutContext";
+import CheckoutContext from "@/context/CheckoutContext";
 import styles from "./Step2.module.scss";
 
 export default function Step2() {

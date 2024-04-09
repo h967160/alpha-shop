@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import ThemeContext from "../../../context/ThemeContext";
+import ThemeContext from "@/context/ThemeContext";
 import styles from "./Navbar.module.scss";
 
 export default function NavbarItems({ items }) {

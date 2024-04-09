@@ -1,4 +1,4 @@
-import pgComplete from "../../../../assets/icons/pg-complete.svg";
+import pgComplete from "@/assets/icons/pg-complete.svg";
 import styles from "./StepProgress.module.scss";
 
 // 根據步驟狀態決定顯示樣式

@@ -1,5 +1,5 @@
-import minus from "../../../assets/icons/minus.svg";
-import plus from "../../../assets/icons/plus.svg";
+import minus from "@/assets/icons/minus.svg";
+import plus from "@/assets/icons/plus.svg";
 import styles from "./Cart.module.scss";
 
 // 控制+-商品數量

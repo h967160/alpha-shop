@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import CheckoutContext from "../../../../context/CheckoutContext";
-import CartContext from "../../../../context/CartContext";
+import CheckoutContext from "@/context/CheckoutContext";
+import CartContext from "@/context/CartContext";
 import NextButton from "./NextButton";
 import PreviousButton from "./PreviousButton";
 import styles from "./ProgressControl.module.scss";

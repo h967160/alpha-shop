@@ -1,6 +1,6 @@
-import facebook from "../../assets/icons/facebook.svg";
-import instagram from "../../assets/icons/instagram.svg";
-import whatsapp from "../../assets/icons/whatsapp.svg";
+import facebook from "@/assets/icons/facebook.svg";
+import instagram from "@/assets/icons/instagram.svg";
+import whatsapp from "@/assets/icons/whatsapp.svg";
 import styles from "./Footer.module.scss";
 
 export default function FooterContactInfo() {

@@ -1,14 +1,14 @@
 import { useContext } from "react";
-import ThemeContext from "../../../context/ThemeContext";
+import ThemeContext from "@/context/ThemeContext";
 import NavbarList from "./NavbarList";
 import NavbarItems from "./NavbarItems";
 import styles from "./Navbar.module.scss";
-import search from "../../../assets/icons/search.svg";
-import searchDark from "../../../assets/icons/search-dark.jpg";
-import cart from "../../../assets/icons/cart.svg";
-import cartDark from "../../../assets/icons/cart-dark.jpg";
-import moon from "../../../assets/icons/moon.svg";
-import sun from "../../../assets/icons/sun.svg";
+import search from "@/assets/icons/search.svg";
+import searchDark from "@/assets/icons/search-dark.jpg";
+import cart from "@/assets/icons/cart.svg";
+import cartDark from "@/assets/icons/cart-dark.jpg";
+import moon from "@/assets/icons/moon.svg";
+import sun from "@/assets/icons/sun.svg";
 
 export default function NavbarMenu() {
   const { theme } = useContext(ThemeContext);

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import CheckoutContext from "../../../../context/CheckoutContext";
+import CheckoutContext from "@/context/CheckoutContext";
 import styles from "./Step3.module.scss";
 export default function Step3() {
   const { cardInfo, handleInputChange } = useContext(CheckoutContext);

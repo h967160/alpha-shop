@@ -8,8 +8,6 @@ export const ThemeProvider = ({ children }) => {
   // 切換淺色/深色主題
   const handleToggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    console.log("clicked!");
-    console.log(theme);
   };
   return (
     <ThemeContext.Provider value={{ theme, handleToggleTheme }}>

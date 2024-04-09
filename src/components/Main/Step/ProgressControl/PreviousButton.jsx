@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import ThemeContext from "../../../../context/ThemeContext";
-import leftArrow from "../../../../assets/icons/left-arrow.svg";
-import leftArrowDark from "../../../../assets/icons/left-arrow-dark.jpg";
+import ThemeContext from "@/context/ThemeContext";
+import leftArrow from "@/assets/icons/left-arrow.svg";
+import leftArrowDark from "@/assets/icons/left-arrow-dark.jpg";
 import styles from "./ProgressControl.module.scss";
 
 export default function PreviousButton({ onClick }) {
