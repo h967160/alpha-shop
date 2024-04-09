@@ -18,7 +18,7 @@ export default function Step2() {
               shippingMethod && shippingMethod.id === "shipping-standard"
             }
             onChange={handleShippingChange}
-            data-price="0"a
+            data-price="0"
           />
           <div className={`${styles.radioInfo}`}>
             <div className={`${styles.infoControl} col col-12`}>

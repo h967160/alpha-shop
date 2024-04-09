@@ -1,34 +1,21 @@
 $header-menu-item-margin-x: 16px;
 $header-action-item-margin-x: 15px;
 
-// navbar toggle
-input.navbarToggle {
-  display: none;
-}
-label.burgerContainer {
-  display: none;
-}
-.iconToggle {
-  width: 24px;
-  height: 24px;
-}
-
 // navbar menu
 nav.navbarMenu {
   display: flex;
   flex-grow: 1;
-  background-color: inherit;
+  background-color: var(--background-color);
   align-items: center;
 
   .navList {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    background-color: inherit;
+    background-color: var(--background-color);
 
     .navItem {
       cursor: pointer;
-
       .navLink {
         font-weight: 500;
         line-height: 24px;

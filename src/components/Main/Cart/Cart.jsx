@@ -11,7 +11,7 @@ export default function Cart() {
   const { shippingMethod } = useContext(CheckoutContext);
 
   return (
-    <section className={`${styles.cartContainer} col col-lg-5 col-sm-12`}>
+    <section className={`${styles.cartContainer} col col-lg-5 `}>
       <h3 className={`${styles.cartTitle}`}>購物籃</h3>
       <ProductList
         products={cartItems}

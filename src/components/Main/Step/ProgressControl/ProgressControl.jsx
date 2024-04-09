@@ -48,9 +48,7 @@ export default function ProgressControl({
 
   return (
     //  progress-control
-    <section
-      className={`${styles.progressControlContainer} col col-lg-6 col-sm-12`}
-    >
+    <section className={`${styles.progressControlContainer} col col-lg-6`}>
       {buttonGroup}
     </section>
   );

@@ -1,0 +1,157 @@
+// 在 scss 使用 :root 全局範圍
+[data-theme="light"] {
+  // header
+  #themeToggle > svg {
+    &:nth-child(1) {
+      display: inline;
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --footer-background-color: #333333;
+  --nav-icon: rgba(255, 255, 255, 0.8);
+  --social-icon: rgba(255, 255, 255, 0.5);
+  --main-text: #ffffff;
+  --secondary-text: rgba(255, 255, 255, 0.6);
+  --header-height: 70px;
+  --header-logo-width: 190px;
+  --done-progress-border: #ffffff;
+  --progress-current-color: #ffffff;
+  --progress-done-color: #ffffff;
+  --progress-undone-color: #717171;
+  --pg-addr-color: #ffffff;
+  --pg-addr-bg-color: #333333;
+  --period-text: rgba(255, 255, 255, 0.4);
+  --input-label: rgba(255, 255, 255, 0.4);
+  --input-border: #5e5e5e;
+  --input-radio-border: #5e5e5e;
+  --input-checked-border: #ffffff;
+  --input-checked-before: #5e5e5e;
+  --input-checked: #ffffff;
+  --input-text: #ffffff;
+  --select-arrow: #5e5e5e;
+  --select-true: #ffffff;
+  --select-false: rgba(255, 255, 255, 0.3);
+  --product-action-text: #333333;
+  --product-action-bg: #808080;
+  --left-arrow: #ffffff;
+
+  .themeContainer {
+    background-color: var(--background-color);
+  }
+
+  main.siteMain {
+    background-color: var(--background-color);
+  }
+
+  header.siteHeader {
+    .headerLogoContainer {
+      img {
+        height: var(--header-height);
+        width: var(--header-logo-width);
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  // header
+  #themeToggle > svg {
+    &:nth-child(1) {
+      display: none;
+    }
+    &:nth-child(2) {
+      display: inline;
+    }
+  }
+
+  // register
+  section.formBody {
+    .inputGroup {
+      .selectContainer {
+        select {
+          background-color: var(--background-color);
+        }
+      }
+    }
+
+    // step2
+    h3.formTitle {
+      color: var(--main-text);
+    }
+    .radioGroup {
+      input[type="radio"]::before {
+        border: none;
+        border-radius: 50%;
+        background-color: #333333;
+      }
+
+      input[type="radio"]:checked::before {
+        border: 6px solid #2a2a2a;
+        background-color: var(--input-checked);
+      }
+
+      .radioInfo {
+        .text,
+        .price {
+          color: var(--main-text);
+        }
+        .period {
+          color: var(--period-text);
+        }
+      }
+
+      input[type="radio"] ~ .radioBoxBorder {
+        border-radius: 4px;
+        border: 1px solid var(--input-radio-border);
+      }
+      input[type="radio"]:checked ~ .radioBoxBorder {
+        border: 1px solid var(--input-checked-border);
+      }
+    }
+  }
+
+  // stepProgress
+  section.progressContainer {
+    .progressBar {
+      border-color: var(--done-progress-border);
+    }
+  }
+
+  // cart
+  section.cartContainer {
+    background-color: #383838;
+    border-color: rgba(255, 255, 255, 0.2);
+    h3.cartTitle {
+      color: var(--main-text);
+    }
+  }
+
+  section.cartInfo {
+    border-top-color: rgba(255, 255, 255, 0.2);
+    .text,
+    .price {
+      color: #ffffff;
+    }
+  }
+
+  // progress-control
+  section.progressControlContainer {
+    section.buttonGroup {
+      button {
+        &.prev {
+          color: var(--main-text);
+          img {
+            width: 25px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

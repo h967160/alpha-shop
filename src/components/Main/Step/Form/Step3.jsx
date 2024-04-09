@@ -10,7 +10,7 @@ export default function Step3() {
       <h3 className={`${styles.formTitle}`}>付款資訊</h3>
       <section className={`${styles.formBody} col col-12`}>
         <div className={`${styles.col} col-12`}>
-          <div className={`${styles.inputGroup} input-w-lg-4 input-w-sm-full`}>
+          <div className={`${styles.inputGroup}`}>
             <div className={`${styles.inputLabel}`}>持卡人姓名</div>
             <input
               type="text"
@@ -22,7 +22,7 @@ export default function Step3() {
           </div>
         </div>
         <div className={`${styles.col} col-12`}>
-          <div className={`${styles.inputGroup} input-w-lg-4 input-w-sm-full`}>
+          <div className={`${styles.inputGroup}`}>
             <div className={`${styles.inputLabel}`}>卡號</div>
             <input
               type="text"
@@ -34,7 +34,7 @@ export default function Step3() {
           </div>
         </div>
         <div className={`${styles.col} col-12`}>
-          <div className={`${styles.inputGroup} input-w-lg-3 input-w-sm-s3`}>
+          <div className={`${styles.inputGroup}`}>
             <div className={`${styles.inputLabel}`}>有效期限</div>
             <input
               type="text"
@@ -44,7 +44,7 @@ export default function Step3() {
               onChange={handleInputChange}
             />
           </div>
-          <div className={`${styles.inputGroup} input-w-lg-3 input-w-sm-s3`}>
+          <div className={`${styles.inputGroup}`}>
             <div className={`${styles.inputLabel}`}>CVC / CCV</div>
             <input
               type="text"

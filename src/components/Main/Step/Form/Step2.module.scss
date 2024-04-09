@@ -4,6 +4,7 @@ h3.formTitle {
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
+  color: var(--main-text);
 }
 
 section.formBody {
@@ -42,12 +43,12 @@ section.formBody {
       height: inherit;
       border: 1px solid #222222;
       border-radius: 50%;
-      background-color: #ffffff;
+      background-color: var(--input-checked-before);
     }
 
     input[type="radio"]:checked::before {
       border: 6px solid #2a2a2a;
-      background-color: #ffffff;
+      background-color: var(--input-checked);
     }
 
     .radioInfo {
@@ -63,11 +64,18 @@ section.formBody {
         font-size: 14px;
         font-weight: normal;
         line-height: 20px;
+        color: var(--main-text);
       }
       .price,
       .period {
         font-size: 12px;
         line-height: 16px;
+      }
+      .period {
+        color: var(--period-text);
+      }
+      .price {
+        color: var(--main-text);
       }
       .infoControl {
         display: flex;
@@ -85,10 +93,10 @@ section.formBody {
 
     input[type="radio"] ~ .radioBoxBorder {
       border-radius: 4px;
-      border: 1px solid #f0f0f5;
+      border: 1px solid var(--input-radio-border);
     }
     input[type="radio"]:checked ~ .radioBoxBorder {
-      border: 1px solid #2a2a2a;
+      border: 1px solid var(--input-checked-border);
     }
 
     #shipping-standard ~ .radioInfo .shipping-text {

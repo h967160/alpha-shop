@@ -22,7 +22,7 @@ section.buttonGroup {
     padding: 0px;
     gap: 1rem;
 
-    & > object {
+    & > img {
       width: 24px;
       height: 24px;
     }
@@ -31,11 +31,7 @@ section.buttonGroup {
       background-color: transparent;
       line-height: 20px;
       font-weight: 400;
-      color: #000000;
-
-      > object {
-        margin-right: 12px;
-      }
+      color: var(--main-text);
     }
     &.next {
       justify-content: center;
@@ -45,50 +41,6 @@ section.buttonGroup {
       background: var(--pink);
       color: #ffffff;
       margin-left: auto;
-
-      > object {
-        margin-left: 12px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: $screen-break-point) {
-  section.progressContainer {
-    margin-top: 24px;
-
-    .progressGroup {
-      .progressIcon {
-        width: 32px;
-        height: 32px;
-        margin-right: 0px;
-
-        .text {
-          line-height: 32px;
-        }
-      }
-    }
-    .progressLabel {
-      display: none;
-    }
-  }
-  section.formContainer {
-    margin-top: 24px;
-  }
-  section.progressControlContainer {
-    position: relative;
-    margin-top: 24px;
-    margin-bottom: 40px;
-  }
-  section.buttonGroup {
-    button.next {
-      width: 156px;
-    }
-
-    &[data-phase="address"] {
-      button.next {
-        width: 100%;
-      }
     }
   }
 }

@@ -12,6 +12,7 @@ section.progressContainer {
     margin: 0px 8px;
     border-width: 2px;
     border-style: solid;
+    border-color: var(--done-progress-border);
   }
 
   .progressGroup {
@@ -72,7 +73,7 @@ section.progressContainer {
     color: var(--main-text);
   }
   .icon {
-    display: none; //隱藏打勾icon
+    display: none;
   }
 }
 
@@ -90,6 +91,6 @@ section.progressContainer {
     color: var(--grey-300);
   }
   .icon {
-    display: none; //先隱藏打勾icon
+    display: none;
   }
 }

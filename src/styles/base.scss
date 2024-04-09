@@ -30,12 +30,18 @@ body {
   --progress-undone-color: #afb1bd;
   --pg-addr-color: #ffffff;
   --pg-addr-bg-color: #2a2a2a;
+  --period-text: #2a2a2a;
   --input-label: #808080;
   --input-border: #4a4a4a;
   --input-text: #999999;
+  --input-radio-border: #ffffff;
+  --input-checked-border: #2a2a2a;
+  --input-checked-before: #ffffff;
+  --input-checked: #ffffff;
   --select-arrow: #2a2a2a;
   --select-true: #2a2a2a;
   --select-false: #999999;
+  --select-background: #999999;
   --product-action-text: #000000;
   --product-action-bg: #f0f0f5;
   --left-arrow: #000000;
@@ -57,6 +63,10 @@ li {
 
 .container {
   margin: 0px 15px;
+}
+
+.themeContainer {
+  background-color: var(--background-color);
 }
 
 .mx-auto {
