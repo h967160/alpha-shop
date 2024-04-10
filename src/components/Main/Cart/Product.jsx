@@ -27,17 +27,17 @@ function Product({
 
   return (
     <div className={`${styles.productContainer} col col-12`}>
-      <img className={`${styles.imgContainer}`} src={img} alt={name} />
-      <div className={`${styles.productInfo}`}>
-        <div className={`${styles.productName}`}>{name}</div>
-        <div className={`${styles.productControlContainer}`}>
+      <img className={styles.imgContainer} src={img} alt={name} />
+      <div className={styles.productInfo}>
+        <div className={styles.productName}>{name}</div>
+        <div className={styles.productControlContainer}>
           <ProductControl
             quantity={quantity}
             handleMinus={handleMinus}
             handlePlus={handlePlus}
           />
         </div>
-        <div className={`${styles.price}`}>${price}</div>
+        <div className={styles.price}>${price}</div>
       </div>
     </div>
   );

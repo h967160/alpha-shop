@@ -12,7 +12,7 @@ export default function PreviousButton({ onClick }) {
   const altText = theme === "dark" ? "left-arrow-dark.jpg" : "left-arrow.svg";
 
   return (
-    <button className={`${styles.prev}`} onClick={onClick}>
+    <button className={styles.prev} onClick={onClick}>
       <img className="cursor-point" src={imageSource} alt={altText} />
       上一步
     </button>

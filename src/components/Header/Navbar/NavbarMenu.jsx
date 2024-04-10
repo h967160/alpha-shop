@@ -60,7 +60,7 @@ export default function NavbarMenu() {
 
   return (
     <>
-      <nav className={`${styles.navbarMenu}`}>
+      <nav className={styles.navbarMenu}>
         <NavbarList items={menuItems} />
         <NavbarItems items={actionItems} />
       </nav>

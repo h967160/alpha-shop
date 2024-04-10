@@ -11,14 +11,14 @@ export default function StepProgress({ stepPhase }) {
         isActive={stepPhase === 1}
         isCompleted={stepPhase > 1}
       />
-      <span className={`${styles.progressBar}`}></span>
+      <span className={styles.progressBar}></span>
       <Step
         number="2"
         label="運送方式"
         isActive={stepPhase === 2}
         isCompleted={stepPhase > 2}
       />
-      <span className={`${styles.progressBar}`}></span>
+      <span className={styles.progressBar}></span>
       <Step number="3" label="付款資訊" isActive={stepPhase === 3} />
     </section>
   );

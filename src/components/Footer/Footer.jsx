@@ -11,10 +11,10 @@ export default function Footer() {
   ];
 
   return (
-    <footer className={`${styles.siteFooter}`}>
-      <div className={`${styles.footerContainer}`}>
-        <section className={`${styles.footerSection}`}>
-          <Logo className={`${styles.footerLogoContainer}`} />
+    <footer className={styles.siteFooter}>
+      <div className={styles.footerContainer}>
+        <section className={styles.footerSection}>
+          <Logo className={styles.footerLogoContainer} />
         </section>
         {sections.map((section, index) => (
           <FooterSection

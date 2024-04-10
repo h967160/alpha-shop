@@ -5,14 +5,14 @@ import styles from "./Cart.module.scss";
 // 控制+-商品數量
 function ProductControl({ quantity, handleMinus, handlePlus }) {
   return (
-    <div className={`${styles.productControl}`}>
+    <div className={styles.productControl}>
       <img
         className={`${styles.productAction} minus`}
         src={minus}
         alt="minus.svg"
         onClick={handleMinus}
       />
-      <span className={`${styles.productCount}`}>{quantity}</span>
+      <span className={styles.productCount}>{quantity}</span>
       <img
         className={`${styles.productAction} plus`}
         src={plus}

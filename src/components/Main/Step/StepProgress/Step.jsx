@@ -20,8 +20,8 @@ export function Step({ number, label, isDefault, isActive, isCompleted }) {
   const stepStyle = getStepStyle(isDefault, isActive, isCompleted);
   return (
     <span className={`${styles.progressGroup} ${stepStyle}`}>
-      <span className={`${styles.progressIcon}`}>
-        <span className={`${styles.text}`}>{number}</span>
+      <span className={styles.progressIcon}>
+        <span className={styles.text}>{number}</span>
         {isActive || isCompleted ? (
           <img
             className={`${styles.icon} cursor-point`}
@@ -30,7 +30,7 @@ export function Step({ number, label, isDefault, isActive, isCompleted }) {
           />
         ) : null}
       </span>
-      <span className={`${styles.progressLabel}`}>{label}</span>
+      <span className={styles.progressLabel}>{label}</span>
     </span>
   );
 }

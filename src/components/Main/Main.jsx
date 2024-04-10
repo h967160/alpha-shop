@@ -32,8 +32,8 @@ export default function Main() {
   }
 
   return (
-    <main className={`${styles.siteMain}`}>
-      <div className={`${styles.mainContainer}`}>
+    <main className={styles.siteMain}>
+      <div className={styles.mainContainer}>
         <CheckoutProvider>
           <CartProvider>
             <StepContainer dataPhase={dataPhase} stepPhase={stepPhase} />
