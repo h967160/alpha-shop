@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import ThemeContext from "../../context/ThemeContext";
-import logo from "../../assets/icons/logo.svg";
-import logoDark from "../../assets/icons/logo-dark.jpg";
+import ThemeContext from "@/context/ThemeContext";
+import logo from "@/assets/icons/logo.svg";
+import logoDark from "@/assets/icons/logo-dark.jpg";
 import styles from "./Logo.module.scss";
 
 export default function Logo({ className }) {
